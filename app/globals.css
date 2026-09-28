@@ -1,10 +1,9 @@
 @import "tailwindcss";
 
 @theme {
---color-blue-800: #003BE2;
+  --color-blue-800: #003BE2;
   --color-surface: #FAFAFA;
-  /* TODO: --color-lime, --color-gray */
-
+  --color-electric-lime: #C8F62B;
   --text-heading-l: 72px;
   --text-heading-m: 44px;
   --text-heading-s: 36px;
@@ -13,4 +12,5 @@
   --text-body-m: 16px;
   --text-body-s: 14px;
   --text-body-xs: 12px;
+  
 }
