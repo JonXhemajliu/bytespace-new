@@ -5,7 +5,7 @@ type Props = React.ButtonHTMLAttributes<HTMLButtonElement> & {
 export default function Button({ variant = "lime", className = "", ...props }: Props) {
   const styles =
     variant === "lime"
-      ? "bg-lime text-black"
+      ? "bg-electric-lime text-black"
       : "border border-white text-white";
   return (
     <button
