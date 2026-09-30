@@ -19,7 +19,7 @@ export default function Footer() {
             <div className="flex flex-col gap-4">
               <div className="flex h-[37px] w-[171px] items-center gap-2">
                 <Image
-                  src="/images/vector.png"
+                  src="/images/Vector.png"
                   alt=""
                   width={29}
                   height={32}
