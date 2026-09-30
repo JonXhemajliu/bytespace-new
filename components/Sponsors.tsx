@@ -1,16 +1,34 @@
-export default function Sponsors() {
-  const logos = ["logolipsum", "logolipsum", "logolipsum", "logolipsum", "logolipsum"];
+import Image from "next/image";
 
+const logos = [
+  { src: "/images/v1.png", w: 40, h: 40 },
+  { src: "/images/v2.png", w: 39.86, h: 25.1 },
+  { src: "/images/v3.png", w: 40, h: 40 },
+  { src: "/images/v4.png", w: 40, h: 40 },
+  { src: "/images/v5.png", w: 40, h: 40 },
+];
+
+export default function Sponsors() {
   return (
-    <div className="w-full border-y border-gray-100 bg-white py-8">
-      <div className="mx-auto flex max-w-7xl items-center justify-around gap-8 opacity-50 grayscale transition-all hover:grayscale-0">
-        {logos.map((logo, i) => (
-          <div key={i} className="flex items-center gap-2 text-lg font-bold tracking-wider text-gray-700">
-            <div className="h-6 w-6 rounded-full bg-gray-400" />
-            <span>{logo}</span>
+    <section className="bg-[#F5F5F6] py-20">
+      <div className="mx-auto grid w-[1200px] max-w-full grid-cols-5 items-center justify-items-center">
+        {logos.map(({ src, w, h }) => (
+          <div key={src} className="flex items-center gap-2">
+            <div className="flex size-10 items-center justify-center">
+              <Image
+                src={src}
+                alt=""
+                width={w}
+                height={h}
+                style={{ width: w, height: h }}
+              />
+            </div>
+            <span className="font-[Satoshi] text-xl font-bold leading-none tracking-[-0.01em] text-[#82868E]">
+              Logoipsum
+            </span>
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

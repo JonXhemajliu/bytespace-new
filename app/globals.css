@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import "tailwindcss";;
 
 @theme {
   --color-blue-800: #003BE2;
@@ -13,4 +13,28 @@
   --text-body-s: 14px;
   --text-body-xs: 12px;
   
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Clash Display";
+  src: url("/fonts/ClashDisplay-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
 }

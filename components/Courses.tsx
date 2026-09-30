@@ -1,6 +1,7 @@
 import SectionHeading from "./SectionHeading";
 import CategoryChip from "./CategoryChip";
 import CourseCard from "./CourseCard";
+import Image from "next/image";
 
 const categories = ["Featured", "Music", "Drawing & Painting", "Marketing", "Animation",
   "Social Media", "UI/UX Design", "Creative Marketing", "Digital Illustration",
@@ -8,12 +9,12 @@ const categories = ["Featured", "Music", "Drawing & Painting", "Marketing", "Ani
   "Photography", "Productivity", "Web Development", "Data Science", "Cooking"];
 
 const courses = [
-  { title: "Learn Figma from Basic", author: "purepixel studio", price: 25 },
-  { title: "Build Digital Asset", author: "purepixel studio", price: 25 },
-  { title: "the Power of Big Data", author: "purepixel studio", price: 25 },
-  { title: "Balancing Productivity and Life", author: "purepixel studio", price: 25 },
-  { title: "Mastering Money Management", author: "purepixel studio", price: 25 },
-  { title: "From Idea to Startup Success", author: "purepixel studio", price: 25 },
+  { title: "Learn Figma from Basic", author: "purepixel studio", price: 25, imageSrc: "/images/b1.jpg" },
+  { title: "Build Digital Asset", author: "purepixel studio", price: 25, imageSrc: "/images/b2.jpg" },
+  { title: "the Power of Big Data", author: "purepixel studio", price: 25, imageSrc: "/images/b3.jpg" },
+  { title: "Balancing Productivity and Life", author: "purepixel studio", price: 25, imageSrc: "/images/b4.jpg" },
+  { title: "Mastering Money Management", author: "purepixel studio", price: 25, imageSrc: "/images/b5.jpg" },
+  { title: "From Idea to Startup Success", author: "purepixel studio", price: 25, imageSrc: "/images/b6.jpg" },
 ];
 
 export default function Courses() {
